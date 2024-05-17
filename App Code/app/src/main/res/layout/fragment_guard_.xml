@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradient">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mainText"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        app:cardElevation="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/maintext_gradient">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Feeling Of Safety"
+                android:textColor="#121212"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="30dp"
+        app:layout_constraintTop_toBottomOf="@id/mainText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientcolor_cardview1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOS"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_margin="16dp"
+                android:elevation="50dp"
+                android:paddingBottom="55dp"/>
+
+            <TextView
+                android:id="@+id/contentCard1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sos"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:elevation="30dp"
+                android:text="In case of emergency, keep telling family members to contact me."
+                android:textColor="@color/white"/>
+            <!--android:layout_marginBottom="-1dp" -->
+
+            <!--<ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sos1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"/> -->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/sosnew"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="16dp"/>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientcolor_cardview2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/guard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GUARD"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_margin="16dp"
+                android:elevation="50dp"
+                android:paddingBottom="55dp"/>
+
+            <TextView
+                android:id="@+id/contentCard2"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/guard"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:elevation="30dp"
+                android:text="Open when you are on a potentially  dangerous journey."
+                android:textColor="@color/white"/>
+            <!--android:layout_marginBottom="-1dp" -->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="-4dp"
+                android:src="@drawable/shield" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
